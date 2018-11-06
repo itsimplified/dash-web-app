@@ -9,13 +9,11 @@ import pandas as pd
 server = Flask(__name__)
 app = dash.Dash(__name__, server=server)
 
-app.config.supress_callback_exceptions = True
-
 crimedata = pd.read_csv('crimedata.csv')
 features = crimedata.columns
 crimetypes = features[:-1] #don't want the year column
 
-#add markdown
+#add markdown text
 markdown_text = """
 Data used for this dashboard was taken from the US Department of Justice website which can be accessed [here.](https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/tables/table-1)
 """
