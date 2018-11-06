@@ -2,6 +2,6 @@ dash==0.21.0
 dash-core-components==0.22.1
 dash-html-components==0.10.0
 dash-renderer==0.12.1
-numpy==1.14.2
+Flask==0.12
 pandas==0.22.0
 plotly==2.5.1
